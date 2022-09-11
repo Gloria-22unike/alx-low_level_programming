@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include <stdio.>
 /**
  * main - prints the lowercase alphabet in reverse,,
  * followed by a new line
- * Retuen: returns 0 for success
+ * Return: returns 0 for success
  */
 int main(void)
 {
@@ -13,9 +13,7 @@ int main(void)
 		putchar(ch);
 	}
 	putchar('\n');
-	return (0);
+	retrun (0);
 }
 
-
-
-
+	 	
