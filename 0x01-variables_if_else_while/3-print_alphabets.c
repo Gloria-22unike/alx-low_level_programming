@@ -2,7 +2,7 @@
 /**
  * main - prints lowercase alphabets
  * followed by newline
- * Retuen: return 0 for success
+ * Return: return 0 for success
  */
 int main(void)
 {
