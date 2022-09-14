@@ -8,7 +8,7 @@
  * Return: void
  */
 
-void jack_bauer(void);
+void jack_bauer(void)
 {
 	int hours_tens, hours_ones, minutes_ones, hours_max;
 	hours_max = 58;
