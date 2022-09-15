@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * time_table - a function that prints the 9 times table, starting with a
+ * times_table - a function that prints the 9 times table, starting with a
  * rone = row, cone = column, d = digits of current result
  * Return: times table
  * add extra space past single digit
