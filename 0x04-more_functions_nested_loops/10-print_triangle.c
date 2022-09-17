@@ -3,11 +3,11 @@
 
 /**
  * print_triangle - prints a triangle
- * @size: size parameter of triangle
+ * @size:size parameter of triangle
  * Return: returns nothing
  */
 
-void print_tiangle(int size)
+void print_triangle(int size)
 {
 	int inc1, inc2;
 
