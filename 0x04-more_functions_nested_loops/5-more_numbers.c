@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- *more_numbers - prints numbers to 14
+ * more_numbers - prints numbers to 14
  *
- *Return: returns nothing
+ * Return: returns nothing
  */
 
 void more_numbers(void)
@@ -18,6 +18,7 @@ void more_numbers(void)
 			if (n2 >9)
 
 				putchar((n2 /10) + '0');
+
 
 		}
 		putchar(10);
