@@ -3,7 +3,7 @@
 
 /**
  * more_numbers - prints numbers to 14
- *
+ * 10 times
  * Return: returns nothing
  */
 
@@ -13,15 +13,13 @@ void more_numbers(void)
 
 	for (n1 = 0; n1 < 10; n1++)
 	{
-		for (n2 = 0; n2 <= 14; n2++)
+		for (n2 = 0; n2 < 15; n2++)
 		{
-			if (n2 >9)
-
-				putchar((n2 /10) + '0');
-
-
+			if (n2 >= 10)
+				_putchar((n2 / 10) + 48);
+			_putchar((n2 % 10) + 48);
 		}
-		putchar(10);
+		_putchar('\n');
 	}
 }
 
