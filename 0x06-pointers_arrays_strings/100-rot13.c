@@ -13,17 +13,17 @@ char *rot13(char *s)
 
 	while (*(s + count) != '\0')
 	{
-		if (i = 0; i < 52; i++)
+		for (i = 0; i < 52; i++)
 		{
-			if (*(s + count) == alphabet[1])
+			if (*(s + count) == alphabet[i])
 			{
-				*(s + count) = rot13[i];
-				break;
+				*(s + count) = rot13[i]:
+					break;
 			}
 		}
 		count++;
 	}
-	
+
 	return (s);
 }
 
