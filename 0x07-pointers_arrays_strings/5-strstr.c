@@ -9,7 +9,7 @@
  * Return: pointer to the byte in s that matches one of the bytes in accept
  * or Null if no such byte is found
  */
-char *_strpbrk(char *s, chare *accept)
+char *_strstr(char *haystack, char *needle)
 {
 	int i, j;
 
