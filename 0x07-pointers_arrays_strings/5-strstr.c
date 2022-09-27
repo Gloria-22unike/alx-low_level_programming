@@ -11,17 +11,18 @@
  */
 char *_strpbrk(char *s, chare *accept)
 {
-	int i;
+	int i, j;
 
-	while (*s)
+	for (i = 0; haystack[i] != '\0'; i++)
 	{
-		for (i = 0; *(accept + i) != 0; i++)
+		for (j = 0; needle[j] != '\0'; j++)
 		{
-			if (*s == *(accept + i))
-				return (s);
+			if (haystack[i + j] != needle[j])
+				break;
 		}
-		s++;
+		if (!needle[j])
+			return (&haystack[i]);
 	}
-	return (0);
+	return (NULL);
 }
 
