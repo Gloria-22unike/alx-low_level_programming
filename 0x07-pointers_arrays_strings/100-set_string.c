@@ -3,7 +3,7 @@
 /**
  * set_string - set the value of a pointer to a char
  * @s: source address
- * @s: source address.@to: target address.
+ * @to: target address.@to: target address.
  * Return: no return.
  */
 
