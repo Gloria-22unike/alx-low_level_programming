@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * rot13 - encodes a string using rot13
  * @s: input string.
@@ -18,8 +17,8 @@ char *rot13(char *s)
 		{
 			if (*(s + count) == alphabet[i])
 			{
-				*(s + count) = rot13[i]:
-					break;
+				*(s + count) = rot13[i];
+				break;
 			}
 		}
 		count++;
