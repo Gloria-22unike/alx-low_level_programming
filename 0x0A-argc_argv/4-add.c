@@ -5,7 +5,7 @@
 /**
  * _isnumber - checks if string is a number
  * @s: string
- * Return: on success 1.
+ * Return: On success 1.
  * if not a number, 0 is returned.
  */
 
@@ -33,7 +33,7 @@ int _isnumber(char *s)
  * main - Entry point
  *
  * @argc: Counts the number of parameters that go into main
- * @argv: Pointer of array of pointers comtaining strings entering main
+ * @argv: Pointer of array of pointers containing strings entering main
  * Return: Always 0 (success)
  */
 int main(int argc, char **argv)
