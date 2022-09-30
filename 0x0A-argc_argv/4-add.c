@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * _is number - checks if string is a number
+ * _isnumber - checks if string is a number
  * @s: string
  * Return: on success 1.
  * if not a number, 0 is returned.
