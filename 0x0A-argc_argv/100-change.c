@@ -33,7 +33,7 @@ int main(int argc, char const *argv[])
 
 	if (argc != 2)
 	{
-		pritf("Error\n");
+		printf("Error\n");
 		return (1);
 	}
 	if (isInteger(argv[i]))
