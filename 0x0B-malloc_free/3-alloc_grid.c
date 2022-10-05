@@ -7,7 +7,7 @@
  * @width: columns
  * @height: rows
  *
- * Return: Double Pointer
+ * Return: Double Pointer 0, s
  */
 
 int **alloc_grid(int width, int height)
