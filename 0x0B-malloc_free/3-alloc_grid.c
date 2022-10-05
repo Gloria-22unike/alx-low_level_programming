@@ -7,7 +7,7 @@
  * @width: columns
  * @height: rows
  *
- * Return: Double Pointer 0, s
+ * Return: Double pointer
  */
 
 int **alloc_grid(int width, int height)
@@ -19,7 +19,7 @@ int **alloc_grid(int width, int height)
 	if (width <= 0 || height <= 0)
 		return (0);
 
-	s = malloc(height * sizeof(int *));
+	s = malloc(height *sizeof(int *));
 	if (s == 0)
 		return (0);
 	for (i = 0; i < height; i++)
@@ -41,6 +41,7 @@ int **alloc_grid(int width, int height)
 		{
 			free(*(s + k));
 		}
+
 		free(s);
 	}
 	return (s);
