@@ -3,15 +3,15 @@
 #include <stdlib.h>
 
 /**
- * free_gris - frees a 2 dimensional grid previously created by
+ * free_grid - frees a 2 dimensional grid previously created by
  * alloc_grid function.
- * @grid: matric double pointer
+ * @grid: matrix double pointer
  * @height: rows (pointer)
  *
  * Return: Nothing
  */
 
-void free_grid(int **grid, int height)
+void free_grid(int ** grid, int height)
 {
 	int i;
 
@@ -19,6 +19,6 @@ void free_grid(int **grid, int height)
 	{
 		free(*(grid + i));
 	}
-	free (grid);
+	free(grid);
 }
 
