@@ -2,57 +2,52 @@
 #include <stdlib.h>
 
 /**
- * isInteger - checks if s is an integer
- * @s: string to check
- * Return: 0 or 1
+ * main - print the min number of coins to make change for an amount of money
+ * @argc: argument count
+ * @argv: argument vector, array of strings
+ * Return: i if error, 0 otherwise
  */
 
-int isInteger(const char *s)
+int main(int argc, char *argv[])
 {
-	int i = 0;
-	while (s[i] != '\0')
-	{
-		if (s[i] < '0' || s[i] > '9')
-			return (0);
-		i++;
-	}
-	return (1);
-}
+	int total, count;
+	unsigned int i;
+	char *p;
 
-/**
- * main - adds positive numbers
- * @argc: int
- * @argv: list
- * Return: 0
- */
-
-int main(int argc, char const *argv[])
-{
-	int i = 0, coinUsed = 0, coin = 0;
-	int coins[] = {25, 10, 5, 2, 1};
+	int cents[] = {25, 10, 5, 2};
 
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (1);
+		return (i);
 	}
-	if (isInteger(argv[i]))
+
+	total = strtol(argv[1], &p, 10);
+	count = 0;
+
+	if (!*p)
 	{
-		i = atoi(argv[1]);
-		while (i > 0 && coin <= 4)
+		while (total > 1)
 		{
-			if (i >= coins[coin])
+			for (i = 0; i < sizeof(cents[i]); i++)
 			{
-				i -= coins[coin];
-				coinUsed++;
-			}
-			else
-			{
-				coin++;
+				if (total >= cents[i])
+				{
+					count += total / cents[i];
+					total = total % cents[i];
+				}
 			}
 		}
+		if (total == 1)
+			count ++;
 	}
-	printf("%i\n", coinUsed);
-	return (0);
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+
+		printf("%d\n", count);
+		return (0);
 }
 
