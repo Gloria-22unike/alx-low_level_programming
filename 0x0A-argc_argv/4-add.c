@@ -17,9 +17,9 @@ int _isnumber(char *s)
 
 	if (*s == '-')
 		i++;
-	for (; *(s + 1) != 0; i++)
+	for (; *(s + i) != 0; i++)
 	{
-		d = isdigit(*(s + 1));
+		d = isdigit(*(s + i));
 		if (d == 0)
 		{
 			check = 0;
@@ -34,7 +34,7 @@ int _isnumber(char *s)
  *
  * @argc: Counts the number of parameters that go into main
  * @argv: Pointer of array of pointers containing strings entering main
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(int argc, char **argv)
 {
@@ -54,8 +54,6 @@ int main(int argc, char **argv)
 	}
 	if (ex == 0)
 		printf("%i\n", n);
-	else
-		printf("%s\n", "Error");
 	return (ex);
 }
 
