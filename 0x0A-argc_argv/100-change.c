@@ -5,7 +5,7 @@
  * main - print the min number of coins to make change for an amount of money
  * @argc: argument count
  * @argv: argument vector, array of strings
- * Return: i if error, 0 otherwise
+ * Return: 1 if error, 0 otherwise
  */
 
 int main(int argc, char *argv[])
