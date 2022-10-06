@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (i);
+		return (1);
 	}
 
 	total = strtol(argv[1], &p, 10);
