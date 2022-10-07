@@ -29,7 +29,7 @@ int *array_range(int min, int max)
 	if (p == 0)
 		return (0);
 
-	for (i = 0, j = min, j <= max, i++, j++)
+	for (i = 0, j = min; j <= max; i++, j++)
 		p[i] = j;
 	if (max == min)
 		p[i] = max;
