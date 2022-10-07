@@ -23,7 +23,7 @@ int *array_range(int min, int max)
 	if (max > min)
 		size = max - min + 1;
 	else if (max == min)
-		cizs = 2;
+		size = 2;
 
 	p = malloc(sizeof(int) * size);
 	if (p == 0)
