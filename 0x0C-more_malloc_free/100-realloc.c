@@ -11,7 +11,7 @@
  * Return: Returns memory copied
  */
 
-char *_memcp(char *dest, char *src, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 
@@ -23,7 +23,7 @@ char *_memcp(char *dest, char *src, unsigned int n)
 /**
  * _realloc - reallocates a memory block using malloc and free
  * @ptr: pointer to modify
- * @old_soze: current size of memory
+ * @old_size: current size of memory
  * @new_size: size memory will now have
  *
  * Return: Pointer to reallocated memory
@@ -31,12 +31,12 @@ char *_memcp(char *dest, char *src, unsigned int n)
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *aptr2;
+	void *ptr2;
 
 	if (old_size == new_size)
 		return (ptr);
 
-	if (ptr ==NULL)
+	if (ptr == NULL)
 	{
 		ptr2 = malloc(new_size);
 		if (ptr2 == 0)
