@@ -10,7 +10,7 @@
  *
  * Return: Return pointer char (so movements are 1 byte)
  */
-char *_memset(char *aptr, int x, unsigned int n)
+char *_memset(char *ptr, int x, unsigned int n)
 {
 	unsigned int i;
 
