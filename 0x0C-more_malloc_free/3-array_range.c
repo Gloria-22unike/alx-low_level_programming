@@ -5,7 +5,7 @@
 /**
  * array_range - creates an array of integers
  * The array created should contain all the values
- * from min (included), ordered from min to max
+ * from min (included) to max (included), ordered from min to max
  * @min: minimal value
  * @max: maximum value
  *
