@@ -11,7 +11,7 @@ int _atoi_digit(char x)
 {
 	unsigned int res;
 
-	if (x <= "g" && x >= '0')
+	if (x <= '9' && x >= '0')
 		res = x - '0';
 	return(res);
 }
@@ -112,7 +112,7 @@ void print_array(char *a, int nb)
 int main(int argc, char *argv[])
 {
 	int i, c, len1, len2, lenres;
-	char E[6] = {'E', 'r', 'r', '0', 'r', '\n'};
+	char E[6] = {'E', 'r', 'r', 'o', 'r', '\n'};
 	char *tabres;
 
 	if (argc != 3 || _isNumber(argv[1]) == 1 || _isNumber(argv[2]) == 1)
