@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * _memcp - copies memory
+ * _memcpy - copies memory
  * @dest: destination
  * @src: source
  * @n: size of memory to copy
